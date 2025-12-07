@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/61421c71db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title>Жанры - Изобразительное искусство</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+</head>
+<body>
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+     <nav class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="artists.html">Художники</a></li>
+            <li><a href="genres.html">Жанры</a></li>
+            <li><a href="workshops.html">Мастер-классы</a></li>
+        </ul>
+    </nav>
+    <div class="top">
+        <div class="header">
+            <div class="logo"> 
+                <img src="img/logo.jpg" alt="логотип">
+            </div>
+            <label for="mobile-menu-toggle" class="mobile-menu-btn">
+                <span></span>
+            </label>
+            <div class="menu-cloud">
+                <nav class="menu">
+                    <ul>
+                        <li><a href = "index.html">Главная</a></li>
+                        <li><a href = "history.html">История</a></li>
+                        <li><a href = "artists.html">Художники</a></li>
+                        <li><a href = "genres.html" class = active>Жанры</a></li>
+                        <li><a href = "workshops.html">Мастер-классы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="header-icons">
+                <div class="contact-dropdown">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-tooltip">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:10047821953">1 (004) 782-19-53</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:pochta@izo.ru">pochta@izo.ru</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-brands fa-vk"></i>
+                            <a href="https://m.vk.ru/">VK</a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <main class="main-content">
+            <!-- Герой секция для жанров -->
+            <section class="hero-section" style="background-image: url('img/Пейзаж.jpg'); min-height: 400px;">
+                <div class="hero-text">
+                    <h1 class="main-title">Жанры живописи</h1>
+                    <p>Исследуйте разнообразие художественных направлений и стилей</p>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <div class="section-header">
+                    <h2 class="section-title">О художественных жанрах</h2>
+                </div>
+                <div class="rounded-frames">
+                    <div class="rounded-frame">
+                        <div class="frame-icon">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="frame-content">
+                            <h3 class="frame-title">Разнообразие стилей</h3>
+                            <p class="frame-text">Каждый жанр имеет свои особенности и технику исполнения</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-frame">
+                        <div class="frame-icon">
+                            <i class="fa-solid fa-history"></i>
+                        </div>
+                        <div class="frame-content">
+                            <h3 class="frame-title">Историческое развитие</h3>
+                            <p class="frame-text">Жанры развивались и менялись на протяжении веков</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded-frame">
+                        <div class="frame-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="frame-content">
+                            <h3 class="frame-title">Восприятие искусства</h3>
+                            <p class="frame-text">Разные жанры вызывают различные эмоции и ассоциации</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Основная секция жанров -->
+            <section class="genres-section">
+                <div class="section-header">
+                    <h2 class="section-title">Откройте многообразие жанров</h2>
+                    <p class="section-subtitle">Наведите на карточку, чтобы узнать больше</p>
+                </div>
+                
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="genre-card">
+                            <img src="img/Портрет.jpg" alt="Портрет">
+                            <h4>Портрет</h4>
+                            <div class="genre-info">
+                                <h4>Портрет</h4>
+                                <p>Художественное изображение человека или группы людей, 
+                                    передающее внешнее сходство и внутренний характер.</p>
+                                <div class="genre-features">
+                                    <span>Личность</span>
+                                    <span>Эмоции</span>
+                                    <span>Характер</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="genre-card">
+                            <img src="img/Пейзаж.jpg" alt="Пейзаж">
+                            <h4>Пейзаж</h4>
+                            <div class="genre-info">
+                                <h4>Пейзаж</h4>
+                                <p>Изображение природных или городских ландшафтов, передающее настроение и атмосферу места.</p>
+                                <div class="genre-features">
+                                    <span>Природа</span>
+                                    <span>Атмосфера</span>
+                                    <span>Пространство</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="genre-card">
+                            <img src="img/Натюрморт.jpg" alt="Натюрморт">
+                            <h4>Натюрморт</h4>
+                            <div class="genre-info">
+                                <h4>Натюрморт</h4>
+                                <p>Композиция из неодушевленных предметов: цветов, фруктов, посуды, передающая их фактуру и форму.</p>
+                                <div class="genre-features">
+                                    <span>Предметы</span>
+                                    <span>Композиция</span>
+                                    <span>Фактура</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="genre-card">
+                            <img src="img/Море.jpg" alt="Маринизм">
+                            <h4>Маринизм</h4>
+                            <div class="genre-info">
+                                <h4>Маринизм</h4>
+                                <p>Изображение моря, морских пейзажей, кораблей и морских сражений.</p>
+                                <div class="genre-features">
+                                    <span>Море</span>
+                                    <span>Корабли</span>
+                                    <span>Стихия</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="genre-card">
+                            <img src="img/Анимализм.jpg" alt="Анимализм">
+                            <h4>Анимализм</h4>
+                            <div class="genre-info">
+                                <h4>Анимализм</h4>
+                                <p>Изображение животных, передающее их повадки, характер и красоту дикой природы.</p>
+                                <div class="genre-features">
+                                    <span>Животные</span>
+                                    <span>Природа</span>
+                                    <span>Динамика</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="genre-card">
+                            <img src="img/Батальный.jpg" alt="Батальный">
+                            <h4>Батальный</h4>
+                            <div class="genre-info">
+                                <h4>Батальный</h4>
+                                <p>Изображение военных сцен, сражений, военной жизни и героических подвигов.</p>
+                                <div class="genre-features">
+                                    <span>Сражения</span>
+                                    <span>Героизм</span>
+                                    <span>История</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="genre-card">
+                            <img src="img/Бытовой.jpg" alt="Бытовой">
+                            <h4>Бытовой</h4>
+                            <div class="genre-info">
+                                <h4>Бытовой</h4>
+                                <p>Изображение повседневной жизни людей, их занятий, традиций и обычаев.</p>
+                                <div class="genre-features">
+                                    <span>Повседневность</span>
+                                    <span>Культура</span>
+                                    <span>Общество</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="genre-card">
+                            <img src="img/Исторический.jpg" alt="Исторический">
+                            <h4>Исторический</h4>
+                            <div class="genre-info">
+                                <h4>Исторический</h4>
+                                <p>Изображение исторических событий, личностей и эпох, воссоздающее прошлое.</p>
+                                <div class="genre-features">
+                                    <span>История</span>
+                                    <span>События</span>
+                                    <span>Эпоха</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn prev-btn">‹</button>
+                    <button class="carousel-btn next-btn">›</button>
+                </div>
+            </section>
+
+            
+        </main>
+        
+        <footer class="footer" id="contact">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h2 class="site-title">Изобразительное искусство</h2>
+                </div>
+                
+                <nav class="footer-menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="artists.html">Художники</a></li>
+                        <li><a href="workshops.html">Мастер-классы</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <div class="contact-links">
+                        <a href="tel:10047821953">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="mailto:pochta@izo.ru">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://m.vk.ru/">
+                            <i class="fa-brands fa-vk"></i>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.carousel-track');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            
+            if (nextBtn && track) {
+                nextBtn.addEventListener('click', function() {
+                    track.scrollBy({ left: 300, behavior: 'smooth' });
+                });
+            }
+            
+            if (prevBtn && track) {
+                prevBtn.addEventListener('click', function() {
+                    track.scrollBy({ left: -300, behavior: 'smooth' });
+                });
+            }
+
+            // Анимация появления элементов
+            const elements = document.querySelectorAll('.genre-card, .rounded-frame');
+            
+            elements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(30px)';
+                element.style.transition = 'all 0.6s ease-out';
+            });
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+            
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

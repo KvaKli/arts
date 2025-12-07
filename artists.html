@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/61421c71db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Художники - Изобразительное искусство</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+</head>
+<body>
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+     <nav class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="artists.html">Художники</a></li>
+            <li><a href="genres.html">Жанры</a></li>
+            <li><a href="workshops.html">Мастер-классы</a></li>
+        </ul>
+    </nav>
+    <div class="top">
+        <div class="header">
+            <div class="logo"> 
+                <img src="img/logo.jpg" alt="логотип">
+            </div>
+            <label for="mobile-menu-toggle" class="mobile-menu-btn"><span></span></label>
+            <div class="menu-cloud">
+                <nav class="menu">
+                    <ul>
+                        <li><a href = "index.html">Главная</a></li>
+                        <li><a href = "history.html">История</a></li>
+                        <li><a href = "artists.html" class = active>Художники</a></li>
+                        <li><a href = "genres.html">Жанры</a></li>
+                        <li><a href = "workshops.html">Мастер-классы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="header-icons">
+                <div class="contact-dropdown">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-tooltip">
+                       <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:10047821953">1 (004) 782-19-53</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:pochta@izo.ru">pochta@izo.ru</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-brands fa-vk"></i>
+                            <a href="https://m.vk.ru/">VK</a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <main class="main-content">
+            <section class="hero-section" style="background-image: url('img/Художник3.jpg'); min-height: 500px;">
+                <div class="hero-text">
+                    <h1 class="main-title">Великие художники</h1>
+                    <p>Откройте для себя мастеров, изменивших мир искусства</p>
+                </div>
+            </section>
+            <!-- Раздел художников -->
+            <section class="artists-section">
+                <div class="section-header">
+                    <h2 class="section-title">Знакомство с великими мастерами изобразительного искусства</h2>
+                </div>
+                
+                <!-- Первый художник -->
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="img/Художник1.jpg" alt="Винсент Ван Гог">
+                    </div>
+                    <div class="artist-info">
+                        <h3>Винсент Виллем Ван Гог</h3>
+                        <p>Нидерландский живописец и график, представитель постимпрессионизма...</p>
+                        <button class="all-btn" onclick="openModal('vangogh')">Подробнее о художнике</button>
+                    </div>
+                </div>
+
+                <!-- Модальное окно Ван Гога -->
+                <div id="vangogh-modal" class="modal">
+                    <div class="modal-content">
+                        <button class="close-modal" onclick="closeModal()">&times;</button>
+                        <h2>Винсент Ван Гог</h2>
+                        <p><strong>Годы жизни:</strong> 1853-1890</p>
+                        <p><strong>Стиль:</strong> Постимпрессионизм</p>
+                        <p><strong>Страна:</strong> Нидерланды</p>
+                        <p>Долгие годы Ван Гог искал себя в религии, фанатично стремясь стать пастором. В 1880 году, по совету брата Тео, 
+                            активно занялся живописью. За десять лет творческой активности написал 870 картин и создал более двух
+                            тысяч произведений искусства в целом.</p>
+                        <p>Полотна Винсента Ван Гога резкие и несдержанные, каким подчас был и сам художник. 
+                             За свою недолгую жизнь Ван Гог смог продать всего лишь несколько картин. Он был в отчаянии. 
+                             Однако он не переставал усердно работать и развивать свой стиль. Сегодня он один из самых популярных 
+                             и самых похищаемых художников в мире.</p>
+                        
+                        <div class="artist-gallery">
+                            <div class="artist-painting">
+                                <img src="img/Звездная ночь.jpg" alt="Звездная ночь">
+                                <p>Звездная ночь (1889)</p>
+                            </div>
+                            <div class="artist-painting">
+                                <img src="img/Подсолнухи.jpg" alt="Подсолнухи">
+                                <p>Подсолнухи (1888)</p>
+                            </div>
+                            <div class="artist-painting">
+                                <img src="img/Ирисы.jpg" alt="Ирисы">
+                                <p>Ирисы (1889)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Второй художник -->
+                <div class="artist-card reverse">
+                    <div class="artist-image">
+                        <img src="img/Художник2.jpg" alt="Рембрандт">
+                    </div>
+                    <div class="artist-info">
+                        <h3>Рембрандт Харменс ван Рейн</h3>
+                        <p>Голландский художник «Золотого века Нидерландов»: живописец, рисовальщик и гравёр в технике офорта. Крупнейший представитель золотого века голландской живописи. Мастер светотени, известен психологической глубиной портретов.</p>
+                        <button class="all-btn" onclick="openModal('rembrandt')">Подробнее о художнике</button>
+                    </div>  
+                </div>
+
+                <div id="rembrandt-modal" class="modal">
+                    <div class="modal-content">
+                        <button class="close-modal" onclick="closeModal()">&times;</button>
+                        <h2>Рембрандт</h2>
+                        <p><strong>Годы жизни:</strong> 1606- 1669</p>
+                        <p><strong>Стиль:</strong> Голландский реализм</p>
+                        <p><strong>Страна:</strong> Нидерланды</p>
+                        <p>Его произведения отличает эмоциональная насыщенность, отражающая огромный спектр человеческих переживаний, 
+                            на его полотнах проявляется необычайное богатство человеческой души, а также изменчивость внутреннего мира.
+                                Характеры и индивидуальность людей художник передавал через их портреты, при этом второстепенные детали он
+                                мог опустить, акцентируя внимание на душевном состоянии своей модели.
+                            Рембрандт написал более 800 картин и 300 офортов, среди которых были мифологические, 
+                            исторические, библейские композиции, портреты, натюрморты и пейзажи</p>
+                        <div class="artist-gallery">
+                            <div class="artist-painting">
+                                <img src="img/Флора.jpg" alt="Флора">
+                                <p>Флора (1634)</p>
+                            </div>
+                            <div class="artist-painting">
+                                <img src="img/возвращение.jpg" alt="Возвращение блудного сына">
+                                <p>Возвращение блудного сына (1668)</p>
+                            </div>
+                            <div class="artist-painting">
+                                <img src="img/ночной дозор.jpg" alt="Ночной дозор">
+                                <p>Ночной дозор (1642)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Третий художник -->
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="img/Художник3.jpg" alt="Орест Кипренский">
+                    </div>
+                    <div class="artist-info">
+                        <h3>Орест Адамович Кипренский</h3>
+                        <p>Русский живописец и график, последователь романтизма, один из самых знаменитых портретистов александровской и николаевской эпох. Автор знаменитого портрета Александра Пушкина и многих других выдающихся работ.</p>
+                        <button class="all-btn" onclick="openModal('kiprensky')">Подробнее о художнике</button>
+                    </div>
+                </div>
+
+                <!-- Модальное окно Кипренского -->
+                <div id="kiprensky-modal" class="modal">
+                    <div class="modal-content">
+                        <button class="close-modal" onclick="closeModal()">&times;</button>
+                        <h2>Орест Адамович Кипренский</h2>
+                        <p><strong>Годы жизни:</strong> 1782-1836</p>
+                        <p><strong>Стиль:</strong> Романтизм</p>
+                        <p><strong>Страна:</strong> Россия</p>
+                        <p>Выдающийся русский портретист, один из лучших представителей романтизма в русской живописи. 
+                        Внебрачный сын помещика А. С. Дьяконова, получил фамилию от названия села Копорье. 
+                        Учился в Академии художеств, где проявил выдающиеся способности к портретной живописи.</p>
+                        <p>Кипренский создал галерею портретов современников - военных, писателей, поэтов, художников. 
+                        Его кисти принадлежит знаменитый портрет Александра Пушкина, который сам поэт высоко оценил. 
+                        Работал в Италии, где также получил признание.</p>
+                        
+                        <div class="artist-gallery">
+                            <div class="artist-painting">
+                                <img src="img/Пушкин.jpg" alt="Портрет Пушкина">
+                                <p>Портрет А.С. Пушкина (1827)</p>
+                            </div>
+                            <div class="artist-painting">
+                                <img src="img/Давыдов.jpg" alt="Портрет Давыдова">
+                                <p>Портрет Е.В. Давыдова (1809)</p>
+                            </div>
+                            <div class="artist-painting">
+                                <img src="img/Маки.jpg" alt="Девочка в маковом венке">
+                                <p>Девочка в маковом венке (1819)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer" id="contact">
+            <!-- Футер как в главной странице -->
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h2 class="site-title">Изобразительное искусство</h2>
+                </div>
+                <nav class="footer-menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="genres.html">Жанры</a></li>
+                        <li><a href="workshops.html">Мастер-классы</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <div class="contact-links">
+                        <a href="tel:10047821953">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="mailto:pochta@izo.ru">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://m.vk.ru/">
+                            <i class="fa-brands fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+     <script>
+    // Анимация появления при скролле
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.artist-card');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+    });
+    </script>
+    <script>
+        let currentModal = null;
+
+        function openModal(artistId) {
+            // Закрываем предыдущее модальное окно если есть
+            if (currentModal) {
+                closeModal();
+            }
+            
+            const modal = document.getElementById(artistId + '-modal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            currentModal = modal;
+        }
+
+        function closeModal() {
+            if (currentModal) {
+                currentModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                currentModal = null;
+            }
+        }
+
+        // Закрытие при клике на фон
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal();
+            }
+        });
+
+        // Закрытие на ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && currentModal) {
+                closeModal();
+            }
+        });
+
+        // Предотвращаем закрытие при клике на контент
+        document.querySelectorAll('.modal-content').forEach(content => {
+            content.addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+        });
+    </script>
+</body>
+</html>

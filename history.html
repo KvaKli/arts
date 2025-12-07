@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/61421c71db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title>История - Изобразительное искусство</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+</head>
+<body>
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+    <nav class="mobile-menu"> 
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="artists.html">Художники</a></li>
+            <li><a href="genres.html">Жанры</a></li>
+            <li><a href="workshops.html">Мастер-классы</a></li>
+        </ul>
+    </nav>
+    <div class="top">
+        <div class="header">
+            <div class="logo"> 
+                <img src="img/logo.jpg" alt="логотип">
+            </div>
+            <label for="mobile-menu-toggle" class="mobile-menu-btn"><span></span></label>
+            <div class="menu-cloud">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="history.html" class="active">История</a></li>
+                        <li><a href="artists.html">Художники</a></li>
+                        <li><a href="genres.html">Жанры</a></li>
+                        <li><a href = "workshops.html">Мастер-классы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="header-icons">
+                <div class="contact-dropdown">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-tooltip">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:10047821953">1 (004) 782-19-53</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:pochta@izo.ru">pochta@izo.ru</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-brands fa-vk"></i>
+                            <a href="https://m.vk.ru/">VK</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <main class="main-content">
+            <!-- Герой секция -->
+            <section class="hero-section" style="background-image: url('img/история.jpg'); min-height: 500px;">
+                <div class="hero-text">
+                    <h1 class="main-title">История искусства</h1>
+                    <p>Путешествие сквозь эпохи: от древних наскальных рисунков до современного авангарда</p>
+                </div>
+            </section>
+
+            <!-- Сетка эпох 3x3 -->
+            <section class="eras-grid-section">
+                <div class="section-header">
+                    <h2 class="section-title">Эпохи искусства</h2>
+                    <p class="section-subtitle">Исследуйте основные периоды развития искусства</p>
+                </div>
+
+                <div class="eras-container">
+                    <div class="eras-grid">
+                        <!-- Карточка 1 -->
+                        <div class="era-card" data-era="prehistoric">
+                            <div class="card-image">
+                                <img src="img/первобытное.jpg" alt="Первобытное искусство">
+                            </div>
+                            <div class="card-content">
+                                <h3>Первобытное искусство</h3>
+                                <p class="era-period">40 000 лет до н.э.</p>
+                                <p class="era-description">Наскальная живопись, петроглифы, ритуальные скульптуры</p>
+                                <button class="era-btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 2 -->
+                        <div class="era-card" data-era="ancient">
+                            <div class="card-image">
+                                <img src="img/древний мир.jpg" alt="Древний мир">
+                            </div>
+                            <div class="card-content">
+                                <h3>Древний мир</h3>
+                                <p class="era-period">до V века</p>
+                                <p class="era-description">Египет, Греция, Рим - монументальное искусство</p>
+                                <button class="era-btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 3 -->
+                        <div class="era-card" data-era="medieval">
+                            <div class="card-image">
+                                <img src="img/средневековье.jpg" alt="Средневековье">
+                            </div>
+                            <div class="card-content">
+                                <h3>Средневековье</h3>
+                                <p class="era-period">V-XV века</p>
+                                <p class="era-description">Готика, романский стиль, иконопись</p>
+                                <button class="era-btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 4 -->
+                        <div class="era-card" data-era="renaissance">
+                            <div class="card-image">
+                                <img src="img/возрождение.jpg" alt="Возрождение">
+                            </div>
+                            <div class="card-content">
+                                <h3>Возрождение</h3>
+                                <p class="era-period">XIV-XVI века</p>
+                                <p class="era-description">Гуманизм, перспектива, великие мастера</p>
+                                <button class="era-btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 5 -->
+                        <div class="era-card" data-era="baroque">
+                            <div class="card-image">
+                                <img src="img/барроко.jpg" alt="Барокко">
+                            </div>
+                            <div class="card-content">
+                                <h3>Барокко</h3>
+                                <p class="era-period">XVII-XVIII века</p>
+                                <p class="era-description">Динамика, эмоциональность, пышность</p>
+                                <button class="era-btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 6 -->
+                        <div class="era-card" data-era="rococo">
+                            <div class="card-image">
+                                <img src="img/рококо.jpg" alt="Рококо">
+                            </div>
+                            <div class="card-content">
+                                <h3>Рококо</h3>
+                                <p class="era-period">XVIII век</p>
+                                <p class="era-description">Изящество, легкость, пасторальные сцены</p>
+                                <button class="era-btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 7 -->
+                        <div class="era-card" data-era="romanticism">
+                            <div class="card-image">
+                                <img src="img/романтизм.jpg" alt="Романтизм">
+                            </div>
+                            <div class="card-content">
+                                <h3>Романтизм</h3>
+                                <p class="era-period">XIX век</p>
+                                <p class="era-description">Эмоции, природа, индивидуализм</p>
+                                <button class="era-btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 8 -->
+                        <div class="era-card" data-era="impressionism">
+                            <div class="card-image">
+                                <img src="img/импресионизм.jpg" alt="Импрессионизм">
+                            </div>
+                            <div class="card-content">
+                                <h3>Импрессионизм</h3>
+                                <p class="era-period">XIX-XX века</p>
+                                <p class="era-description">Свет, цвет, мгновенные впечатления</p>
+                                <button class="era-btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 9 -->
+                        <div class="era-card" data-era="modern">
+                            <div class="card-image">
+                                <img src="img/современное.jpg" alt="Современность">
+                            </div>
+                            <div class="card-content">
+                                <h3>Современность</h3>
+                                <p class="era-period">XX-XXI века</p>
+                                <p class="era-description">Авангард, эксперименты, новые формы</p>
+                                <button class="era-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Модальные окна -->
+            <div id="prehistoric-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2>Первобытное искусство</h2>
+                    <p><strong>Период:</strong> около 40 000 лет до н.э.</p>
+                    <p><strong>Основные черты:</strong> синкретизм, ритуальность, анималистические сюжеты</p>
+                    <p>Первобытное искусство — примитивное творчество людей, живших в древнем мире до изобретения письменности. 
+                        Оно было найдено на всех континентах земли, кроме Антарктиды.
+                        Первобытное искусство включает множество произведений дописьменных культур, включая самые ранние памятники, 
+                        созданные человеком. Считается, что люди того времени верили в магию, поэтому пытались в том числе с помощью своих изображений
+                         воздействовать на природу и результаты охоты. На многих изображениях в центре нарисованного животного выбито углубление.
+                          Вероятно, древние люди верили, что нужно поразить стрелой или копьем нарисованного зверя, чтобы обеспечить успех предстоящей
+                           охоты в реальности.</p>
+                    
+                    <div class="artist-gallery">
+                        <div class="artist-painting">
+                            <img src="img/пещера.jpg" alt="Наскальная живопись">
+                            <p>Пещера Альтамира</p>
+                        </div>
+                        <div class="artist-painting">
+                            <img src="img/человекрыба.jpg" alt="Человек-рыба">
+                            <p>Человек-рыба</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ancient-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2>Искусство Древнего Мира</h2>
+                    <p><strong>Период:</strong> IV тысячелетие до н.э. - V век н.э.</p>
+                    <p><strong>Основные черты:</strong> монументальность, каноничность, религиозная направленность</p>
+                    <p>Искусство Древнего мира охватывает творчество древних цивилизаций Египта, Месопотамии, Греции и Рима. 
+                    Оно характеризовалось строгими канонами, монументальными формами и тесной связью с религиозными культами и мифологией. 
+                    В Древнем Египте искусство служило в первую очередь целям загробного культа, в Месопотамии прославляло могущество правителей, 
+                    а в Древней Греции и Риме развивалось в направлении гуманизма и реализма. Архитектура, скульптура и живопись этого периода 
+                    заложили основы всего последующего европейского искусства.</p>
+                    
+                    <div class="artist-gallery">
+                        <div class="artist-painting">
+                            <img src="img/египет.jpg" alt="Древнеегипетское искусство">
+                            <p>Древнеегипетская живопись</p>
+                        </div>
+                        <div class="artist-painting">
+                            <img src="img/греция.jpg" alt="Древнегреческое искусство">
+                            <p>Древнегреческая скульптура</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="medieval-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2>Искусство Средневековья</h2>
+                    <p><strong>Период:</strong> V-XV века н.э.</p>
+                    <p><strong>Основные черты:</strong> религиозность, символизм, иератичность</p>
+                    <p>Искусство Средневековья развивалось под сильным влиянием христианской церкви и было направлено на прославление Бога и религиозных догматов. 
+                    Основными стилями были романский (X-XII вв.) с его массивными формами и суровостью, и готический (XII-XV вв.) с стремлением к вертикализму
+                    и обилием света. В изобразительном искусстве преобладали религиозные сюжеты, фигуры часто изображались условно, без реалистичных пропорций, 
+                    так как главной задачей было передать духовную сущность, а не физическое совершенство. Книжная миниатюра, витражи, фрески и иконы стали 
+                    основными видами средневекового искусства.</p>
+                    
+                    <div class="artist-gallery">
+                        <div class="artist-painting">
+                            <img src="img/средневековье.jpg" alt="Готический витраж">
+                            <p>Готические витражи</p>
+                        </div>
+                        <div class="artist-painting">
+                            <img src="img/миниатюра.jpg" alt="Книжная миниатюра">
+                            <p>Книжная миниатюра</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="renaissance-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2>Искусство Возрождения</h2>
+                    <p><strong>Период:</strong> XIV-XVI века</p>
+                    <p><strong>Основные черты:</strong> гуманизм, антропоцентризм, возрождение античных идеалов</p>
+                    <p>Эпоха Возрождения (Ренессанс) ознаменовала переход от средневекового теоцентризма к гуманизму, 
+                    где в центре внимания оказался человек с его земными чувствами и разумом. Художники обратились 
+                    к наследию античности, изучали анатомию, перспективу и пропорции. В искусстве утвердились принципы 
+                    реализма, гармонии и красоты. Возрождение делится на три основных периода: Раннее Возрождение 
+                    (творчество Джотто, Боттичелли), Высокое Возрождение (Леонардо да Винчи, Рафаэль, Микеланджело) 
+                    и Позднее Возрождение (Тициан, Тинторетто).</p>
+                    
+                    <div class="artist-gallery">
+                        <div class="artist-painting">
+                            <img src="img/возрождение.jpg" alt="Мона Лиза">
+                            <p>Леонардо да Винчи - "Мона Лиза"</p>
+                        </div>
+                        <div class="artist-painting">
+                            <img src="img/венера.jpg" alt="Рождение Венеры">
+                            <p>Боттичелли - "Рождение Венеры"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="baroque-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2>Искусство Барокко</h2>
+                    <p><strong>Период:</strong> Конец XVI - середина XVIII века</p>
+                    <p><strong>Основные черты:</strong> драматизм, динамика, контрастность, эмоциональная насыщенность</p>
+                    <p>Эпоха Барокко ознаменовала переход от гармонии Возрождения к экспрессии и динамике, 
+                    где в центре внимания оказались сильные эмоции и театральность. Художники обратились 
+                    к сложным композициям, контрастам света и тени (кьяроскуро), иллюзионистическим эффектам. 
+                    В искусстве утвердились принципы движения, пышности и декоративности. Барокко развивалось 
+                    в разных странах: итальянское барокко (Караваджо, Бернини), фламандское (Рубенс, Ван Дейк), 
+                    голландское (Рембрандт, Вермеер) и испанское (Веласкес).</p>
+                    
+                    <div class="artist-gallery">
+                        <div class="artist-painting">
+                            <img src="img/ночной дозор.jpg" alt="Ночной дозор">
+                            <p>Рембрандт - "Ночной дозор"</p>
+                        </div>
+                        <div class="artist-painting">
+                            <img src="img/карл.jpg" alt="Карл I верхом">
+                            <p>Антонис ван Дейк - "Карл I верхом"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rococo-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2>Искусство Рококо</h2>
+                    <p><strong>Период:</strong> Начало - середина XVIII века</p>
+                    <p><strong>Основные черты:</strong> изящество, легкомыслие, пасторальность, декоративность</p>
+                    <p>Эпоха Рококо ознаменовала переход от пышности Барокко к изяществу и легкости, 
+                    где в центре внимания оказались галантные сцены, пасторальные мотивы. 
+                    Художники обратились к светлым тонам, изогнутым линиям, асимметричным композициям и мифологическим 
+                    сюжетам. В искусстве утвердились принципы игривости, чувственности и декоративной утонченности. 
+                    Рококо развивалось преимущественно во Франции (Вато, Буше, Фрагонар) и отражало вкусы аристократии.</p>
+                    
+                    <div class="artist-gallery">
+                        <div class="artist-painting">
+                            <img src="img/качели.jpg" alt="Качели">
+                            <p>Жан Оноре Фрагонар - Качели</p>
+                        </div>
+                        <div class="artist-painting">
+                            <img src="img/пастух.jpg" alt="Купание Дианы">
+                            <p>Франсуа Буше - Пастух, играющий пастушке на дудочке</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="romanticism-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2>Искусство Романтизма</h2>
+                    <p><strong>Период:</strong> Конец XVIII - середина XIX века</p>
+                    <p><strong>Основные черты:</strong> эмоциональность, индивидуализм, возвышенность, интерес к природе</p>
+                    <p>Эпоха Романтизма ознаменовала переход от рационализма к чувственности, 
+                    где в центре внимания оказались сильные эмоции, индивидуальное восприятие и возвышенные идеалы. 
+                    Художники обратились к драматическим сюжетам, мощи природы, историческим темам и народному фольклору. 
+                    В искусстве утвердились принципы свободы творчества, эмоциональной выразительности и противопоставления 
+                    личности обществу. Романтизм развивался в разных странах: немецкий (Фридрих), французский (Делакруа, Жерико), 
+                    английский (Тёрнер) и испанский (Гойя).</p>
+                    
+                    <div class="artist-gallery">
+                        <div class="artist-painting">
+                            <img src="img/девятый вал.jpg" alt="Девятый вал">
+                            <p>Иван Айвазовский - Девятый вал</p>
+                        </div>
+                        <div class="artist-painting">
+                            <img src="img/странник.jpg" alt="Странник над морем тумана">
+                            <p>Каспар Давид Фридрих - Странник над морем тумана</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="impressionism-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2>Искусство Импрессионизма</h2>
+                    <p><strong>Период:</strong> Вторая половина XIX - начало XX века</p>
+                    <p><strong>Основные черты:</strong> мгновенность, световоздушная среда, вибрация цвета, работа на пленэре</p>
+                    <p>Эпоха Импрессионизма ознаменовала революционный переход от студийной живописи к работе на открытом воздухе, 
+                    где в центре внимания оказались мимолетные впечатления, игра света и изменчивость окружающего мира. 
+                    Художники обратились к технике раздельного мазка, чистым цветам, отказу от черного, изображению современной жизни. 
+                    В искусстве утвердились принципы непосредственности восприятия, фиксации мгновения и субъективности видения. 
+                    Импрессионизм зародился во Франции (Моне, Ренуар, Дега, Писсарро, Сислей) и открыл путь модернизму.</p>
+                    
+                    <div class="artist-gallery">
+                        <div class="artist-painting">
+                            <img src="img/впечатление.jpg" alt="Впечатление. Восход солнца">
+                            <p>Клод Моне - Впечатление. Восход солнца</p>
+                        </div>
+                        <div class="artist-painting">
+                            <img src="img/бал.jpg" alt="Бал в Мулен де ла Галетт">
+                            <p>Пьер Огюст Ренуар - Бал в Мулен де ла Галетт</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modern-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2>Современное Искусство</h2>
+                    <p><strong>Период:</strong> Середина XX века - настоящее время</p>
+                    <p><strong>Основные черты:</strong> разнообразие стилей, концептуальность, эксперименты с материалами, междисциплинарность</p>
+                    <p>Современное искусство характеризуется отказом от традиционных форм и поиском новых выразительных средств, 
+                    где в центре внимания оказались идеи, концепции и социальные вопросы. Художники обратились к смешению жанров, 
+                    использованию новых технологий, перформансу и инсталляциям. В искусстве утвердились принципы свободы самовыражения, 
+                    критического осмысления действительности и диалога со зрителем. Современное искусство включает множество направлений: 
+                    поп-арт (Уорхол), концептуализм, минимализм, стрит-арт, цифровое искусство и другие формы.</p>
+                    
+                    <div class="artist-gallery">
+                        <div class="artist-painting">
+                            <img src="img/мэрилин.jpg" alt="Диптих Мэрилин">
+                            <p>Энди Уорхол - Диптих Мэрилин</p>
+                        </div>
+                        <div class="artist-painting">
+                            <img src="img/собака.jpg" alt="Баллонная собака">
+                            <p>Джефф Кунс - Баллонная собака</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        
+        <footer class="footer" id="contact">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h2 class="site-title">Изобразительное искусство</h2>
+                </div>
+                <nav class="footer-menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="artists.html">Художники</a></li>
+                        <li><a href="genres.html">Жанры</a></li>
+                        <li><a href="workshops.html">Мастер-классы</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <div class="contact-links">
+                        <a href="tel:10047821953">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="mailto:pochta@izo.ru">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://m.vk.ru/">
+                            <i class="fa-brands fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Эффект размытия при наведении
+        document.querySelectorAll('.era-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                // Размываем все карточки кроме текущей
+                document.querySelectorAll('.era-card').forEach(otherCard => {
+                    if (otherCard !== this) {
+                        otherCard.classList.add('blurred');
+                    }
+                });
+                // Увеличиваем текущую карточку
+                this.classList.add('zoomed');
+            });
+
+            card.addEventListener('mouseleave', function() {
+                // Убираем размытие и увеличение
+                document.querySelectorAll('.era-card').forEach(otherCard => {
+                    otherCard.classList.remove('blurred');
+                    otherCard.classList.remove('zoomed');
+                });
+            });
+        });
+
+        // Открытие модальных окон
+        document.querySelectorAll('.era-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const eraCard = this.closest('.era-card');
+                const eraId = eraCard.getAttribute('data-era');
+                const modal = document.getElementById(eraId + '-modal');
+                
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Закрытие модальных окон
+        document.querySelectorAll('.close-modal').forEach(button => {
+            button.addEventListener('click', function() {
+                const modal = this.closest('.modal');
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Закрытие при клике на фон
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', function(event) {
+                if (event.target === this) {
+                    this.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // Закрытие на ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                document.querySelectorAll('.modal.active').forEach(modal => {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

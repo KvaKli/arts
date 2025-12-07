@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/61421c71db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title>Мастер-классы</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+</head>
+<body>
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+     <nav class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="artists.html">Художники</a></li>
+            <li><a href="genres.html">Жанры</a></li>
+            <li><a href="workshops.html">Мастер-классы</a></li>
+        </ul>
+    </nav>
+    <div class="top">
+        <div class="header">
+            <div class="logo"> 
+                <img src="img/logo.jpg" alt="логотип">
+            </div>
+            <label for="mobile-menu-toggle" class="mobile-menu-btn"><span></span>
+            </label>
+            <div class="menu-cloud">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="artists.html">Художники</a></li>
+                        <li><a href="genres.html">Жанры</a></li>
+                        <li><a href="workshops.html" class="active">Мастер-классы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-icons">
+                <div class="contact-dropdown">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-tooltip">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:10047821953">1 (004) 782-19-53</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:pochta@izo.ru">pochta@izo.ru</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-brands fa-vk"></i>
+                            <a href="https://m.vk.ru/">VK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <section class="hero-section" style="background-image: url('img/главная.jpg'); min-height: 400px;">
+                <div class="hero-text">
+                    <h1 class="main-title">Мастер-классы</h1>
+                    <p>Откройте в себе художника на наших профессиональных мастер-классах</p>
+                </div>
+            </section>
+
+            <section class="workshops-container-section">
+                <div class="workshops-container">
+                    
+                    
+                    <div class="workshops-list">
+                        <h2>Доступные мастер-классы</h2>
+                        
+                        <div class="workshop-card">
+                            <h3>Акварель для начинающих</h3>
+                            <p><strong>Длительность:</strong> 2 часа</p>
+                            <p><strong>Стоимость:</strong> <span class="workshop-price">1500 руб.</span></p>
+                            <p><strong>Описание:</strong> Освойте основы работы с акварелью, технику лессировки и создание воздушных эффектов</p>
+                        </div>
+                        
+                        <div class="workshop-card">
+                            <h3>Масляная живопись</h3>
+                            <p><strong>Длительность:</strong> 3 часа</p>
+                            <p><strong>Стоимость:</strong> <span class="workshop-price">2500 руб.</span></p>
+                            <p><strong>Описание:</strong> Познакомьтесь с техникой масляной живописи и создайте свою первую картину маслом</p>
+                        </div>
+                        
+                        <div class="workshop-card">
+                            <h3>Портрет карандашом</h3>
+                            <p><strong>Длительность:</strong> 2.5 часа</p>
+                            <p><strong>Стоимость:</strong> <span class="workshop-price">1800 руб.</span></p>
+                            <p><strong>Описание:</strong> Научитесь передавать черты лица и характер человека в портрете</p>
+                        </div>
+
+                        
+                    </div>
+                    <div class="form-section">
+                        <h2>Запись на мастер-класс</h2>
+                        <form id="workshop-form">
+                            <div class="input-box">
+                                <label for="full-name">ФИО:</label>
+                                <input type="text" id="full-name" name="full-name" placeholder="Введите ваше полное имя" required>
+                            </div>
+                            
+                            <div class="input-box">
+                                <label for="email">Электронная почта:</label>
+                                <input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+                            </div>
+                            
+                            <div class="input-box">
+                                <label for="workshop-date">Дата мастер-класса:</label>
+                                <input type="date" id="workshop-date" name="workshop-date" required>
+                            </div>
+                            
+                            <div class="input-box">
+                                <label for="workshop-type">Выберите мастер-класс:</label>
+                                <select id="workshop-type" name="workshop-type" required>
+                                    <option value="watercolor">Акварель для начинающих</option>
+                                    <option value="oil">Масляная живопись</option>
+                                    <option value="portrait">Портрет карандашом</option>
+                                </select>
+                            </div>
+                            
+                            <div class="input-box">
+                                <label for="participants">Количество участников:</label>
+                                <select id="participants" name="participants" required>
+                                    <option value="1">1 человек</option>
+                                    <option value="2">2 человека</option>
+                                    <option value="3">3 человека</option>
+                                    <option value="4">4 человека</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="workshop-btn">Записаться на мастер-класс</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="contact">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h2 class="site-title">Изобразительное искусство</h2>
+                </div>
+                
+                <nav class="footer-menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="artists.html">Художники</a></li>
+                        <li><a href="genres.html">Жанры</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <div class="contact-links">
+                        <a href="tel:10047821953">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="mailto:pochta@izo.ru">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://m.vk.ru/">
+                            <i class="fa-brands fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="notification" class="mobile-notification">
+        <div class="notification-content">
+            <i class="fa-solid fa-check-circle"></i>
+            <p>Вы успешно записались на мастер-класс!</p>
+            <button onclick="hideNotification()">OK</button>
+        </div>
+    </div>
+<script>
+// Функция для показа уведомления
+function showNotification(message) {
+    const notification = document.getElementById('notification');
+    const notificationText = notification.querySelector('p');
+    
+    // Устанавливаем текст сообщения (если message не передан, используем сообщение по умолчанию)
+    notificationText.textContent = message || 'Вы успешно записались на мастер-класс!';
+    
+    // Показываем уведомление
+    notification.style.display = 'flex';
+}
+function hideNotification() {
+    const notification = document.getElementById('notification');
+    notification.style.display = 'none';
+}
+// Обработчик формы
+document.getElementById('workshop-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = {
+        fullName: document.getElementById('full-name').value,
+        email: document.getElementById('email').value,
+        date: document.getElementById('workshop-date').value,
+        workshop: document.getElementById('workshop-type').value,
+        participants: document.getElementById('participants').value,
+    };
+    
+    try {
+        // Сохраняем в localStorage
+        const registrations = JSON.parse(localStorage.getItem('workshopRegistrations') || '[]');
+        registrations.push({
+            ...formData,
+            id: Date.now(),
+            timestamp: new Date().toISOString()
+        });
+        localStorage.setItem('workshopRegistrations', JSON.stringify(registrations));
+        
+        // Показываем уведомление (сообщение по умолчанию из функции)
+        showNotification(); // ← Можно вызвать без параметра
+        
+        // Сбрасываем форму
+        this.reset();
+        
+        // Если на мобильном, скроллим вверх
+        if (window.innerWidth <= 768) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    } catch (error) {
+        console.error('Ошибка при сохранении:', error);
+        showNotification('Произошла ошибка. Пожалуйста, попробуйте еще раз.');
+    }
+});
+</script>
+</body>
+</html>
